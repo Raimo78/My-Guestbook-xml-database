@@ -1,37 +1,21 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <booklist>
   <nimi>
-    <nimi>Raimo</nimi>
-    <viesti>Terve</viesti>
-    <sähköpostiosoite>diskos78@gmail.com</sähköpostiosoite>
-    <aika>7.1.2021</aika>
+    <nimi>Jasser</nimi>
+    <viesti>Hurjaa hurjaa!</viesti>
+    <email>jasu@gmail.com</email>
+    <aika>2021-01-08</aika>
   </nimi>
   <nimi>
-    <nimi>Jukka</nimi>
-    <viesti>Moi</viesti>
-    <sähköpostiosoite>diskos78@gmail.com</sähköpostiosoite>
-    <aika>7.1.2021</aika>
+    <nimi>Keijo</nimi>
+    <viesti>Hurraa!</viesti>
+    <email>vika@vika.fi</email>
+    <aika>08.01.2021 09:30:39</aika>
   </nimi>
   <nimi>
-    <nimi>Raimo J&#xE4;ms&#xE9;n</nimi>
-    <viesti>Moikka!</viesti>
-    <sähköpostiosoite/>
-    <aika/>
-  </nimi>
-  <nimi>
-    <nimi>Raimo J&#xE4;ms&#xE9;n</nimi>
-    <viesti>T&#xE4;m&#xE4; on testi! Onko aakkoset oikein?</viesti>
-  </nimi>
-  <nimi>
-    <nimi>Raimo J&#xE4;ms&#xE9;n</nimi>
-    <viesti>Hyv&#xE4;&#xE4; uutta vuotta 2021!</viesti>
-  </nimi>
-  <nimi>
-    <nimi>Satu</nimi>
-    <viesti>Moikka!</viesti>
-  </nimi>
-  <nimi>
-    <nimi>Raimo J&#xE4;ms&#xE9;n</nimi>
-    <viesti>This is test!</viesti>
+    <nimi>Raimo Jämsén</nimi>
+    <viesti>Tämä on testi! Onko aakkoset oikein?</viesti>
+    <email>diskos78@gmail.com</email>
+    <aika>08.01.2021 11:06:46</aika>
   </nimi>
 </booklist>
