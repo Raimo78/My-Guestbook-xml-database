@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="fi">
+
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, XML, PHP, JavaScript">
+    <meta name="description" content="raimojamsendomain.fi">
+    <meta charset="UTF-8">
     <title>Vieraskirja</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -79,6 +82,7 @@ function showPage() {
   document.getElementById("loader").style.display = "none";
   
 }
+
 </script>
 
 <div class="outCircle">
@@ -105,10 +109,10 @@ float: right;
 body {
     background-image:url("jpg/mypaper.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 150% 150%;
 }
 html {
-    height: 100%
+    height: 150%
 }
 
 body {
@@ -267,7 +271,10 @@ function closeNav() {
               <div class="form-group">
               <i class="fa fa-envelope" style="font-size:48px;color:red"></i>
                   <label for="sähköposti"><p style="color:yellow">Sähköpostiosoite(vapaaehtoinen)</label>
-                  <input type="text" placeholder="sähköposti" name="sähköposti" id="sähköposti" class="form-control">
+                  <input class="form-control" placeholder="Contact's email" 
+                  name="contact_email" id="contact_email" type="email" 
+                  title="Contact's email (format: xxx@xxx.xxx)" 
+                  pattern="[a-zA-Z0-9!#$%&amp;'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*">
               </div>
 
               <div class="form-group">
@@ -275,7 +282,7 @@ function closeNav() {
                   <label for="aika"><p style="color:yellow">Aika</label>
                   <input placeholder="aika" class="textbox-n" type="text" onfocus="(this.type='date')" id="aika">
               </div>
-              <button style="font-size:24px">Lähetä <i class="fa fa-user"></i></button>
+              <button style="font-size:24px">Lähetä<i class="fa fa-user"></i></button>
 
           </form>  
 
@@ -293,7 +300,11 @@ function closeNav() {
           
         foreach($xml->nimi as $nimi){
 
-          echo '<li class="list-group-item">' . $nimi->viesti . '(' . $nimi->nimi . ')' . '</li>';
+          echo '<li class="list-group-item list-group-item-danger">' . $nimi->aika . '</li>'; 
+          echo '<li class="list-group-item list-group-item-warning">' . $nimi->nimi . '</li>';
+          echo '<li class="list-group-item list-group-item-success">' . $nimi->email . '</li>';
+          echo '<li class="list-group-item list-group-item-light">' . $nimi->viesti . '</li>';
+
         }
 
           ?>
