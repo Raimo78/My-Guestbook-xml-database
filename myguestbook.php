@@ -153,7 +153,7 @@ body {
   margin-left: 50px;
 }
 
-@media screen and (max-height: 450px) {
+@media screen and (max-height: 600px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
@@ -213,7 +213,7 @@ body {
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="myguestbook.php">Home</a>
+  <a href="index.html">Home</a>
   <a href="contactme.html">Contact</a>
 </div>
 
@@ -253,7 +253,7 @@ function closeNav() {
 
         <div class="col">
 
-          <h2 style="color:yellow">Vieraskirja It-Welhot</h2>
+          <h2 style="color:yellow">Opiskelijan vieraskirja</h2>
           
           <form method="POST" action="save.php">
               <div class="form-group">
@@ -285,6 +285,12 @@ function closeNav() {
               <button style="font-size:24px">Lähetä<i class="fa fa-user"></i></button>
 
           </form>  
+
+          <form action="remove.php" method="post" name="remove" id="calendarEdit">
+              <i class="fa fa-trash-o" style="font-size:48px;color:blue"></i>
+                  <input class="calendarInput" type="text" name="name" id="name">
+                  <input type="submit" name="button" id="button" value="Delete">
+          </form>
 
         </div>
 
@@ -323,6 +329,7 @@ function closeNav() {
    left: 0;
    bottom: 0;
    width: 100%;
+   height: 21%;
    background-color: blue;
    color: white;
    text-align: center;
@@ -341,7 +348,13 @@ float: right;
 </style>
 
 <div class="footer">
-<script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/780892/t/0"></script><p>&#169;By Raimo Jämsén Data2019C</p>
+<script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/780892/t/0"></script><p>&#169;By Ehdokkaasi: Raimo Jämsén</p>
+<tr> 
+  <td class="hover" height="60" style="font-family:Helvetica, Arial, sans-serif; font-size:16px; color:#d0292d;"> 
+    <a href="mailto:diskos78@gmail.com" onMouseOver="this.style.color='#71080a'" onMouseOut="this.style.color='#d0292d'" style="color:#d0292d; ">diskos78@gmail.com</a> 
+    <br> 
+    <a href="http://www.raimojamsendomain.fi" onMouseOver="this.style.color='#71080a'" onMouseOut="this.style.color='#d0292d'" target="_blank" style="color:#d0292d;">http://www.raimojamsendomain.fi</a> 
+  </td> 
 </div>
 
 <img src="jpg/hp.jpg" alt="ruusu" width="200" height="200" id="hp1"/>
